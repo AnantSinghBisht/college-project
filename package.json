@@ -1,9 +1,12 @@
-{
+{ 
+  "homepage":"AnantSinghBisht.github.io/college-project",
   "name": "devconnector",
   "version": "1.0.0",
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -30,6 +33,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.6.1",
+    "gh-pages": "^3.1.0",
     "nodemon": "^1.19.4"
   }
 }
